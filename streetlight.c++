@@ -1,4 +1,4 @@
-# Minimum-streets-lights
+
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;
@@ -15,7 +15,7 @@ int solve(int location[], int n)
     for (int i = 0; i < n; i++)
     {
         int id = i + 1;
-        range[i].first = max(1, id – location[i]);
+        range[i].first = max(1, id - location[i]);
         range[i].second = min(n, id + location[i]);
     }
  
